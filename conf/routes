@@ -2,6 +2,11 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
+# sec
+
+GET     /sec/v1/apps                controllers.Application.apps()
+GET     /sec/v1/apps/:id                controllers.Application.app(id)
+
 # Home page
 GET     /                           controllers.Application.index()
 
